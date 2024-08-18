@@ -5,7 +5,7 @@ datasets=("IMDBBINARY" "IMDBMULTI" "MUTAG" "NCI1" "PROTEINS" "PTC")
 
 # Loop over each dataset
 for dataset in "${datasets[@]}"; do
-	# Check if the dataset's name is "IMDBMULTI", "IMDBBINARY" or "COLLAB"
+	# Check if the dataset's name is "IMDBMULTI" or "IMDBBINARY"
 	if [[ "$dataset" == "IMDBMULTI" || "$dataset" == "IMDBBINARY" ]]; then
 		additional_flag="--degree_as_tag"
 	else
